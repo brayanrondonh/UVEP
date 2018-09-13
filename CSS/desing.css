@@ -97,8 +97,95 @@ header
 
 header #menu nav#enlaces a
 {
+	font-family: 'Lato';
 	text-decoration: none;
 	color: white;
+}
+
+main
+{
+	width: 100%;
+	height: auto;
+	background: blue;
+}
+
+main #principalArticle
+{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	background: red;
+}
+
+main #principalArticle a
+{
+	text-decoration: none;
+	color: black;
+}
+
+main #principalArticle figure
+{
+	width: 100%;
+	height: 250px;
+}
+
+main #principalArticle img
+{
+	width: 100%;
+	height: 100%;
+}
+
+main #principalArticle .titulos
+{
+	height: auto;
+	text-align: justify;
+	text-decoration-style: none;
+	background: rgba(255,255,255,.9);
+}
+
+main #allArticles
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: green;
+}
+
+main #allArticles .articles
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: cyan;
+}
+
+main #allArticles .articles a
+{
+	text-decoration: none;
+	color: black;
+}
+
+main #allArticles .articles:nth-of-type(1)
+{
+	padding-top: 0;
+}
+
+main #allArticles .articles figure
+{
+	width: 100%;
+	height: 150px;
+}
+
+main #allArticles .articles figure img
+{
+	width: 100%;
+	height: 100%;
+}
+
+main #allArticles .titulos
+{
+	height: auto;
+	text-align: justify;
+	text-decoration-style: none;
+	background: rgba(255,255,255,.9);
 }
 
 @media screen and (min-width: 600px)
@@ -169,6 +256,49 @@ header #menu nav#enlaces a
 	{
 		display: none;
 	}
+
+	main
+	{
+		width: 60%;
+		max-width: 750px;
+		margin-left: 15%;
+	}
+
+	main #principalArticle
+	{
+		padding-top: 0;
+		padding-bottom: 35px;
+	}
+
+	main #principalArticle figure
+	{
+		height: 400px;
+	}
+
+	main #principalArticle .titulos
+	{
+		font-size: 1.3em;
+		text-align: left;
+	}
+
+	main #allArticles .articles
+	{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	main #allArticles .articles figure
+	{
+		height: 250px;
+	}
+
+	main #allArticles .titulos
+	{
+		font-size: 1.3em;
+		text-align: left;
+	}
+
+
 
 }
 
