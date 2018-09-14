@@ -106,14 +106,12 @@ main
 {
 	width: 100%;
 	height: auto;
-	background: blue;
 }
 
 main #principalArticle
 {
 	padding-top: 25px;
 	padding-bottom: 25px;
-	background: red;
 }
 
 main #principalArticle a
@@ -147,14 +145,12 @@ main #allArticles
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background: green;
 }
 
 main #allArticles .articles
 {
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background: cyan;
 }
 
 main #allArticles .articles a
@@ -188,12 +184,89 @@ main #allArticles .titulos
 	background: rgba(255,255,255,.9);
 }
 
+main #allArticles .articles:nth-of-type(7)
+{
+	padding-bottom: 50px;
+}
+
+#buttons
+{
+	height: auto;
+	width: 90%;
+	margin-left: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 50px;
+}
+
+#buttons a
+{
+	color: white;
+	text-decoration: none;
+	padding: 15px 1px;
+	border-radius: 5px;
+	text-align: center;
+	background: rgba(48,51,46,.8);
+}
+
+/*#buttons a:nth-of-type(1),
+#buttons a:nth-of-type(2)
+{
+	display: none;
+}
+
+#buttons a:nth-of-type(3)
+{
+	margin: auto;
+	padding: 15px 25px;
+}*/
+
+footer
+{
+	width: 100%;
+	height: 100px;
+	background: rgb(48,51,46);
+}
+
 @media screen and (min-width: 600px)
 {
 	body
 	{
 		background: orange;
 	}
+
+		main #allArticles .articles
+	{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	main #allArticles .articles figure
+	{
+		height: 250px;
+	}
+
+
+	#buttons a
+	{
+		padding: 25px 25px;
+	}
+
+/*	#buttons a:nth-of-type(1),
+	#buttons a:nth-of-type(2)
+	{
+		display: none;
+	}
+
+	#buttons a:nth-of-type(3)
+	{
+		margin: auto;
+		padding: 35px 95px;
+	}*/
+
+
 }
 
 @media screen and (min-width: 767px)
@@ -298,7 +371,37 @@ main #allArticles .titulos
 		text-align: left;
 	}
 
+	#buttons
+	{
+		height: auto;
+		width: 60%;
+		max-width: 750px;
+		margin-left: 15%;
+		padding-bottom: 50px;
+	}
 
+	#buttons a
+	{
+		padding: 25px 20px;
+	}
+
+	#buttons a:hover
+	{
+		background: rgba(48,51,46,1);
+		transition-duration: 1s;
+	}
+
+	/*#buttons a:nth-of-type(1),
+	#buttons a:nth-of-type(2)
+	{
+		display: none;
+	}
+
+	#buttons a:nth-of-type(3)
+	{
+		margin: auto;
+		padding: 15px 25px;
+	}*/
 
 }
 
@@ -307,5 +410,10 @@ main #allArticles .titulos
 	body
 	{
 		background: green;
+	}
+
+	#buttons a
+	{
+		padding: 25px 30px;
 	}
 }
