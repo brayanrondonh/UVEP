@@ -276,7 +276,7 @@ footer #socialMedia
 
 footer #socialMedia h3
 {
-	color: white;
+	color: orange;
 	font-size: 1.3em;
 	font-family: 'Lato';
 	padding-bottom: 15px;
@@ -320,15 +320,57 @@ footer #socialMedia a:nth-of-type(4):before
 footer #suscription
 {
 	height: auto;
-	background: green;
 	padding-top: 25px;
 }
 
 footer #suscription h3
 {
-	text-align: center;
+	text-align: justify;
+	color: white;
+	padding-bottom: 20px;
+}
+
+footer #suscription #input #formulario
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+footer #suscription #input input
+{
+	height: 50px;
+	width: 75%;
+	border: none;
+	border-bottom: 1px solid white;
+}
+
+footer #suscription #input button
+{
+	width: 50px;
+	height: 50px;
+	background: orange;
+}
+
+footer #suscription #input button:before
+{
+	font-family: 'icomoon';
+	content: "\e908";
+	font-size: 2.5em;
 	color: white;
 }
+
+footer #copy p
+{
+	text-align: center;
+	color: white;
+
+}
+
+
+
+
 
 @media screen and (min-width: 600px)
 {
@@ -365,6 +407,11 @@ footer #suscription h3
 		margin: auto;
 		padding: 35px 95px;
 	}*/
+
+	footer #suscription h3
+	{
+		text-align: center;
+	}
 
 
 }
@@ -503,6 +550,52 @@ footer #suscription h3
 		padding: 15px 25px;
 	}*/
 
+	footer #panels
+	{
+		flex-direction: row;
+		padding-bottom: 55px;
+	}
+
+	footer #panels #aboutMe
+	{
+		padding-top: 45px;
+		width: 45%;
+	}
+
+	footer #panels #rrssSuscription
+	{
+		padding-top: 45px;
+		width: 45%;
+	}
+
+	footer #socialMedia
+	{
+		padding-top: 0;
+		padding-bottom: 0;
+		margin: auto;
+	}
+
+	footer #suscription
+	{
+		padding-top: 25px;
+	}
+
+	footer #suscription h3
+	{
+		text-align: center;
+		margin: auto;
+	}
+
+	footer #suscription #input
+	{
+		justify-content: center;
+	}
+
+	footer #suscription #input button
+	{
+		cursor: pointer;
+	}
+
 }
 
 @media screen and (min-width: 950px)
@@ -515,5 +608,15 @@ footer #suscription h3
 	#buttons a
 	{
 		padding: 25px 30px;
+	}
+
+	footer #socialMedia
+	{
+		justify-content: center;
+	}
+
+	footer #suscription #input input
+	{
+		width: 50%;
 	}
 }

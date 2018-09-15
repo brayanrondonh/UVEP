@@ -163,10 +163,12 @@
 					<a href="#"></a>
 				</div>
 				<div id="suscription">
-					<h3>Recibe nuestras publicaciones en tu correo</h3>
+					<h3>Recibe nuestras nuevas publicaciones en tu correo</h3>
 					<div id="input">
-						<input type="mail" name="mail" placeholder="Ingrese tu correo">
-						<button type="submit"></button>
+						<form id="formulario" method="post" action="suscription.php">
+							<input type="email" name="email" placeholder="Ingrese tu correo">
+							<button type="submit"></button>					
+						</form>
 					</div>
 				</div>
 			</div>
