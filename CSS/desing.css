@@ -268,6 +268,101 @@ main#category .itemsCategory a h3:hover:last-child
 	transition-duration: .6s;
 }
 
+main#articulos
+{
+	background: cyan;
+	width: 100%;
+	max-width: 750px;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+main#articulos figure
+{
+	width: 100%;
+	height: 250px;
+}
+
+main#articulos figure img
+{
+	width: 100%;
+	height: 100%;
+}
+
+main#articulos>p
+{
+	font-family: 'Lato';
+	font-size: 1.5em;
+	margin: 35px 0;
+	padding: 0 25px;
+}
+
+main#articulos #containerTitulo
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0 25px;
+	margin-bottom: 35px;
+}
+
+
+main#articulos #containerTitulo #redes
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+main#articulos #containerTitulo #redes a
+{
+	font-size: 2.5em;
+	border-radius: 5px;
+	margin-right: 15px;
+	text-decoration: none;
+}
+
+main#articulos #containerTitulo #redes a:nth-of-type(1) i
+{
+	color: #3b5998;
+}
+
+main#articulos #containerTitulo #redes a:nth-of-type(2) i
+{
+	color: #1da1f2;
+}
+
+main#articulos #containerTitulo #redes a:nth-of-type(3) i
+{
+	color: #25d366;
+}
+
+main#articulos #containerTitulo #autorFecha p:first-child
+{
+	color: #0088cc;
+	margin-bottom: 5px;
+}
+
+main#articulos #containerTitulo #autorFecha p:last-child
+{
+	font-size: .7em;
+}
+
+main#articulos #contenido
+{
+	padding: 0 25px;
+}
+
+main#articulos #contenido p
+{
+	padding-bottom: 15px;
+}
+
 #buttons
 {
 	height: auto;
@@ -444,12 +539,7 @@ footer #copy p
 {
 	text-align: center;
 	color: white;
-
 }
-
-
-
-
 
 @media screen and (min-width: 600px)
 {
@@ -468,7 +558,6 @@ footer #copy p
 	{
 		height: 250px;
 	}
-
 
 	#buttons a
 	{
@@ -491,8 +580,6 @@ footer #copy p
 	{
 		text-align: center;
 	}
-
-
 }
 
 @media screen and (min-width: 767px)
@@ -530,7 +617,6 @@ footer #copy p
 		background: none;
 	}
 
-
 	#menu #card_menu #enlaces
 	{
 		display: flex;
@@ -542,7 +628,7 @@ footer #copy p
 
 	#menu #card_menu #enlaces a
 	{
-		margin-left: 1em;
+		margin-left: .5em;
 	}
 
 	#menu #card_menu #enlaces a:hover
@@ -602,6 +688,41 @@ footer #copy p
 		margin: 0 auto;
 		width: 70%;
 		margin-bottom: 55px;
+	}
+
+	main#articulos figure
+	{
+		height: 450px;
+	}
+
+	main#articulos>p
+	{
+		font-size: 1.7em;
+	}
+
+	main#articulos #containerTitulo
+	{
+		margin-bottom: 55px;
+	}
+
+	main#articulos #containerTitulo #redes a
+	{
+		font-size: 2.7em;
+	}
+
+	main#articulos #containerTitulo #autorFecha p:first-child
+	{
+		font-size: 1.3em;
+	}
+
+	main#articulos #containerTitulo #autorFecha p:last-child
+	{
+		font-size: .9em;
+	}
+
+	main#articulos #contenido p
+	{
+		padding-bottom: 25px;
 	}
 
 	#buttons
@@ -681,7 +802,6 @@ footer #copy p
 	{
 		cursor: pointer;
 	}
-
 }
 
 @media screen and (min-width: 950px)
