@@ -20,6 +20,33 @@ header
 	background: rgb(48,51,46);
 }
 
+#error
+{
+	height: 100vh;
+	background-image: url(../IMAGE/error404.jpg);
+	background-position: top center;
+	background-size: cover;
+}
+
+#error p
+{
+	font-size: 2.5em;
+	color: rgba(255,255,255,1);
+	position: absolute;
+	left: 15%;
+	font-weight: bolder;
+}
+
+#error p:first-child
+{
+	bottom: 20%;
+}
+
+#error p:last-child
+{
+	bottom: 10%;
+}
+
 #menu
 {
 	width: 90%;
@@ -136,7 +163,7 @@ main #principalArticle .titulos
 {
 	height: auto;
 	text-align: justify;
-	text-decoration-style: none;
+	text-decoration: none;
 	background: rgba(255,255,255,.9);
 }
 
@@ -180,7 +207,7 @@ main #allArticles .titulos
 {
 	height: auto;
 	text-align: justify;
-	text-decoration-style: none;
+	text-decoration: none;
 	background: rgba(255,255,255,.9);
 }
 
@@ -416,6 +443,7 @@ footer #panels
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	background: violet;
 }
 
 footer #panels #aboutMe
@@ -435,6 +463,7 @@ footer #panels #aboutMe h3
 footer #panels #aboutMe p
 {
 	color: white;
+	font-size: .9em;
 	text-align: justify;
 }
 
@@ -444,8 +473,8 @@ footer #socialMedia
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-bottom: 15px;
+	background: cyan;
 }
 
 footer #socialMedia h3
@@ -458,50 +487,46 @@ footer #socialMedia h3
 
 footer #socialMedia a
 {
-	font-size: 50px;
+	font-size: 2em;
 	margin-left: 10px;
 	text-decoration: none;
 }
 
-footer #socialMedia a:nth-of-type(1):before
+footer #socialMedia a:nth-of-type(1)
 {
-	font-family: 'icomoon';
-	content: "\e900";
 	color: #3b5998;
 }
 
-footer #socialMedia a:nth-of-type(2):before
+footer #socialMedia a:nth-of-type(2)
 {
-	font-family: 'icomoon';
-	content: "\e902";
 	color: #1da1f2;
 }
 
-footer #socialMedia a:nth-of-type(3):before
+footer #socialMedia a:nth-of-type(3)
 {
-	font-family: 'icomoon';
-	content: "\e901";
 	color: #0077b5;
 }
 
-footer #socialMedia a:nth-of-type(4):before
+footer #socialMedia a:nth-of-type(4)
 {
-	font-family: 'icomoon';
-	content: "\e905";
-	color: beige;
+	color: #f8931f;
 }
 
 footer #suscription
 {
 	height: auto;
-	padding-top: 25px;
+	padding-top: 15px;
+	background: red;
 }
 
 footer #suscription h3
 {
 	text-align: justify;
 	color: white;
-	padding-bottom: 20px;
+	font-size: 1.1em;
+	padding-bottom: 10px;
+	text-align: center;
+	background: yellow;
 }
 
 footer #suscription #input #formulario
@@ -514,24 +539,17 @@ footer #suscription #input #formulario
 
 footer #suscription #input input
 {
-	height: 50px;
-	width: 75%;
+	height: 30px;
+	width: 50%;
 	border: none;
 	border-bottom: 1px solid white;
 }
 
 footer #suscription #input button
 {
-	width: 50px;
-	height: 50px;
+	width: 30px;
+	height: 30px;
 	background: orange;
-}
-
-footer #suscription #input button:before
-{
-	font-family: 'icomoon';
-	content: "\e908";
-	font-size: 2.5em;
 	color: white;
 }
 
@@ -576,9 +594,11 @@ footer #copy p
 		padding: 35px 95px;
 	}*/
 
-	footer #suscription h3
+	footer #socialMedia a
 	{
-		text-align: center;
+		font-size: 2.5em;
+		margin-left: 10px;
+		text-decoration: none;
 	}
 }
 
@@ -686,6 +706,7 @@ footer #copy p
 	main#category
 	{
 		margin: 0 auto;
+		margin-top: 55px;
 		width: 70%;
 		margin-bottom: 55px;
 	}
@@ -760,19 +781,19 @@ footer #copy p
 	footer #panels
 	{
 		flex-direction: row;
-		padding-bottom: 55px;
+		padding-bottom: 0;
 	}
 
 	footer #panels #aboutMe
 	{
 		padding-top: 45px;
-		width: 45%;
+		width: 47%;
 	}
 
 	footer #panels #rrssSuscription
 	{
 		padding-top: 45px;
-		width: 45%;
+		width: 47%;
 	}
 
 	footer #socialMedia
@@ -780,6 +801,11 @@ footer #copy p
 		padding-top: 0;
 		padding-bottom: 0;
 		margin: auto;
+	}
+
+	footer #socialMedia a
+	{
+		font-size: 2em;
 	}
 
 	footer #suscription
@@ -819,6 +845,13 @@ footer #copy p
 	footer #socialMedia
 	{
 		justify-content: center;
+	}
+
+	footer #socialMedia a
+	{
+		font-size: 3em;
+		margin-left: 15px;
+		text-decoration: none;
 	}
 
 	footer #suscription #input input
